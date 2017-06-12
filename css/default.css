@@ -1,0 +1,100 @@
+
+
+.card-panel {
+	padding: 10px;
+	padding-top: 1px;
+	background: white;
+}
+
+.section-head {
+	color: gray;
+	padding: 5px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid silver;
+}
+
+.section-head i {
+	color: gray;
+	margin-right: 5px;
+}
+
+#user-name {
+	text-transform: uppercase;
+	color: black;
+}
+
+.profile-data span {
+	font-weight: bold;
+}
+
+.flag-red {
+	color: red;
+	font-weight: plain;
+}
+
+.hospital-data {
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+.chart-block {
+	width: 100%;
+	height: 150px;
+}
+
+.row {
+	margin-top: 10px;
+}
+
+.trend-panel {
+	border: 1px solid #dcdcdc;
+	margin: 2px;
+	height: 100px;
+	padding: 5px;
+	background: #f5f5f5; /* Old browsers */
+}
+
+#measurement-container .col-sm-4 p {
+	margin-left: 5px;
+}
+
+.trend-panel div {
+}
+
+.inline-image {
+	display: inline-block;
+	padding: 5px;
+	color: white;
+	overflow: hidden;
+	width: 170px;
+	height: 170px;
+}
+
+.leftpad-20 p {
+	padding-left: 30px;
+}
+.notopborder {
+	border-top: none;
+}
+
+@media (max-width: 768px) {
+	.inline-image {
+		display: inline-block;
+		padding: 5px;
+		color: white;
+		overflow: hidden;
+		width: 100px;
+		height: 100px;
+	}
+
+	.leftpad-20 p {
+		padding-left: 10px;
+	}
+
+}
+
+#nprogress .bar {
+	background: red;
+	height: 2px;
+}

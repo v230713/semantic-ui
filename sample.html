@@ -1,0 +1,784 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Stagb Admin Template - Dashboard</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name=viewport content="width=device-width, initial-scale=1" />
+<link href="dist/semantic.min.css" rel="stylesheet" />
+<link href="plugins/ionicons/css/ionicons.min.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+<link href="plugins/fluidbox/dist/css/fluidbox.min.css" rel="stylesheet" />
+<link href="plugins/datepicker/css/bootstrap-datepicker.min.css"
+	rel="stylesheet" />
+<link href="plugins/weather-icons/css/weather-icons-wind.min.css"
+	rel="stylesheet" />
+<link href="plugins/weather-icons/css/weather-icons.min.css"
+	rel="stylesheet" />
+<link href="plugins/chartist/chartist.min.css" rel="stylesheet" />
+<link href="css/chat-page.css" rel="stylesheet" />
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.inline-image {
+	display: inline-block;
+	padding: 5px;
+	color: black;
+	overflow: hidden;
+	width: 170px;
+	height: 170px;
+}
+
+.measurements {
+	display: inline-block;
+	padding: 5px;
+	color: black;
+	overflow: hidden;
+	width: 170px;
+	height: 140px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.notes-para {
+	padding: 10px;
+	border-bottom: 1px dotted silver;
+}
+
+.text-muted {
+	color: #777;
+}
+</style>
+
+</head>
+
+<body>
+	<div id="contextWrap">
+		<!--sidebar-->
+		<div
+			class="ui sidebar vertical left menu overlay  borderless visible sidemenu inverted  grey"
+			style="-webkit-transition-duration: 0.1s; transition-duration: 0.1s;"
+			data-color="grey">
+
+			<a class="item" href="typography.html"> <i
+				class="home small icon"></i> <span class="colhidden">Home</span>
+			</a> <a class="item" href="document.html"> <i class="bar chart icon"></i>
+				<span class="colhidden">Deshbord</span>
+			</a> <a class="item" href="document.html"> <i class="users icon"></i>
+				<span class="colhidden">My Patients</span>
+			</a> <a class="item" href="document.html"> <i class="user icon"></i>
+				<span class="colhidden">Profile</span>
+			</a> <a class="item" href="document.html"> <i class="setting icon"></i>
+				<span class="colhidden">Settings</span>
+			</a> <a class="item hiddenCollapse displaynone"></a>
+		</div>
+
+		<!--sidebar-->
+		<div class="ui right sidebar">
+			<div class="ui pointing secondary one item tabular menu">
+
+
+				<a class="item active" data-tab="first"><i
+					class="blue icon ion-gear-a"></i></a>
+			</div>
+
+
+			<div class="ui tab active" data-tab="first">
+
+				<h4 class="ui header">Navbar Color</h4>
+				<div class="ui basic segment">
+
+					<ul class="colorlist">
+						<li><a class="ui segment yellow inverted"
+							data-addClass="inverted yellow"> </a></li>
+						<li><a class="ui segment red inverted"
+							data-addClass="inverted red"> </a></li>
+						<li><a class="ui segment blue inverted"
+							data-addClass="inverted blue"> </a></li>
+						<li><a class="ui segment black inverted"
+							data-addClass="inverted black"> </a></li>
+						<li><a class="ui segment orange inverted"
+							data-addClass="inverted orange"> </a></li>
+						<li><a class="ui segment pink inverted"
+							data-addClass="inverted pink"> </a></li>
+						<li><a class="ui segment green inverted"
+							data-addClass="inverted green"> </a></li>
+						<li><a class="ui segment purple inverted"
+							data-addClass="inverted purple"> </a></li>
+						<li><a class="ui segment violet inverted"
+							data-addClass="inverted violet"> </a></li>
+						<li><a class="ui segment brown inverted"
+							data-addClass="inverted brown"> </a></li>
+						<li><a class="ui segment teal inverted"
+							data-addClass="inverted teal"> </a></li>
+						<li><a class="ui segment greenli inverted"
+							data-addClass="inverted greenli"> </a></li>
+						<li><a class="ui segment grey inverted"
+							data-addClass="inverted grey"> </a></li>
+						<li><a class="ui segment redli inverted"
+							data-addClass="inverted redli"> </a></li>
+						<li><a class="ui segment yellowli inverted"
+							data-addClass="inverted yellowli"> </a></li>
+						<li><a class="ui segment blueli inverted"
+							data-addClass="inverted blueli"> </a></li>
+						<li><a class="ui segment darkpurpleli inverted"
+							data-addClass="inverted darkpurpleli"> </a></li>
+						<li><a class="ui segment darkorangeli inverted"
+							data-addClass="inverted darkorangeli"> </a></li>
+						<li><a class="ui segment greenli2 inverted"
+							data-addClass="inverted greenli2"> </a></li>
+						<li><a class="ui segment pinkli inverted"
+							data-addClass="inverted pinkli"> </a></li>
+						<li><a class="ui segment lightyellowli inverted"
+							data-addClass="inverted lightyellowli"> </a></li>
+						<li><a class="ui segment darkli inverted"
+							data-addClass="inverted darkli"> </a></li>
+						<li><a class="ui segment lightbrownli inverted"
+							data-addClass="inverted lightbrownli"> </a></li>
+					</ul>
+				</div>
+
+				<h4 class="ui header">Sidebar Color</h4>
+				<div class="ui divider"></div>
+				<div class="ui basic segment">
+
+					<ul class="sidecolor">
+						<li><a class="ui segment yellow inverted"
+							data-addClass="inverted yellow"> </a></li>
+						<li><a class="ui segment red inverted"
+							data-addClass="inverted red"> </a></li>
+						<li><a class="ui segment blue inverted"
+							data-addClass="inverted blue"> </a></li>
+						<li><a class="ui segment black inverted"
+							data-addClass="inverted black"> </a></li>
+						<li><a class="ui segment orange inverted"
+							data-addClass="inverted orange"> </a></li>
+						<li><a class="ui segment pink inverted"
+							data-addClass="inverted pink"> </a></li>
+						<li><a class="ui segment green inverted"
+							data-addClass="inverted green"> </a></li>
+						<li><a class="ui segment purple inverted"
+							data-addClass="inverted purple"> </a></li>
+						<li><a class="ui segment violet inverted"
+							data-addClass="inverted violet"> </a></li>
+						<li><a class="ui segment brown inverted"
+							data-addClass="inverted brown"> </a></li>
+						<li><a class="ui segment teal inverted"
+							data-addClass="inverted teal"> </a></li>
+						<li><a class="ui segment greenli inverted"
+							data-addClass="inverted greenli"> </a></li>
+						<li><a class="ui segment grey inverted"
+							data-addClass="inverted grey"> </a></li>
+						<li><a class="ui segment redli inverted"
+							data-addClass="inverted redli"> </a></li>
+						<li><a class="ui segment yellowli inverted"
+							data-addClass="inverted yellowli"> </a></li>
+						<li><a class="ui segment blueli inverted"
+							data-addClass="inverted blueli"> </a></li>
+						<li><a class="ui segment darkpurpleli inverted"
+							data-addClass="inverted darkpurpleli"> </a></li>
+						<li><a class="ui segment darkorangeli inverted"
+							data-addClass="inverted darkorangeli"> </a></li>
+						<li><a class="ui segment greenli2 inverted"
+							data-addClass="inverted greenli2"> </a></li>
+						<li><a class="ui segment pinkli inverted"
+							data-addClass="inverted pinkli"> </a></li>
+						<li><a class="ui segment lightyellowli inverted"
+							data-addClass="inverted lightyellowli"> </a></li>
+						<li><a class="ui segment darkli inverted"
+							data-addClass="inverted darkli"> </a></li>
+						<li><a class="ui segment lightbrownli inverted"
+							data-addClass="inverted lightbrownli"> </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="pusher">
+			<!--navbar-->
+			<div class="navslide navwrap fixed ">
+				<div class="ui menu icon borderless grid"
+					data-color="inverted white">
+					<a class="item labeled openbtn"> <i
+						class="ion-navicon-round big icon"></i>
+					</a> <a class="item labeled expandit"
+						onclick="toggleFullScreen(document.body)"> <i
+						class="ion-arrow-expand big icon"></i>
+					</a>
+					<div class="right menu colhidden">
+
+						<a class="item labeled rightsidebar computer only"><h2>
+								PATIENT VIEW</h2> </a>
+					</div>
+					<div class="right menu colhidden">
+						<div class="item ui colhidden">
+							<div class="ui icon input">
+								<input type="text" placeholder="Search..."> <i
+									class="search icon"></i>
+							</div>
+						</div>
+						<a class="item labeled rightsidebar computer only"> <i
+							class="ion-wrench large icon"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--navbar-->
+			<!--maincontent-->
+			<div class="mainWrap navslide">
+				<div class="ui equal width left aligned padded grid stackable">
+
+					<div
+						class="sixteen wide tablet sixteen wide computer column text-align"
+						style="margin-top: 10px; height: 55px;">
+						<div class=" right aligned ">
+
+							<button class=" teal right floated ui button ">
+								<i class="record icon"></i>Video
+							</button>
+							<button class="green right floated ui button ">
+								<i class="share alternate icon"></i>Collaborate
+							</button>
+							<button class="blue right floated ui button ">
+								<i class="zoom icon"></i>March Studies
+							</button>
+							<button class="blue right floated ui button ">
+								<i class="calendar icon"></i>Timeline [V]
+							</button>
+							<button class="ui  right floated  orange button ">
+								<i class="calendar outline icon"></i>Timeline [H]
+							</button>
+						</div>
+					</div>
+
+					<div class="sixteen wide tablet sixteen wide computer column"
+						style="height: 150px;">
+						<div class="ui segment">
+							<div class="ui link items">
+								<div class="item">
+									<div class="ui tiny image" style="width: 110px;">
+										<img class="ui small image" src="IMG/81.jpg">
+									</div>
+									<div class="content">
+										<h3>PATTI MARTIN</h3>
+
+										43 years, Female <br> <b>DOB:</b> January 30, 1974<br>
+										<b>Diagnosis:</b> HTM <br> <b>Allergy:</b> Novacatine
+										(coma)
+									</div>
+									<div class=" right aligned"
+										style="margin-top: 15px; margin-right: 20px;">
+										MRN No. 37455901 <br> Admitted on 05/24/1990 <br>
+										Dep. of Physical Therapy <br> Room 7, Bed 5<br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="stretched row">
+						<div class="sixteen wide tablet six wide computer column">
+							<div class="ui segment">
+								<h3 class="ui dividing header">
+									<i class="image icon"></i>Images
+								</h3>
+
+								<div id="images-container" class="text-center"
+									style="margin: 5px;">
+									<a href="IMG/knee.jpg">
+										<div class="inline-image">
+											<img src="IMG/knee.jpg" width="100%">
+										</div>
+									</a> <a href="IMG/knee.jpg">
+										<div class="inline-image">
+											<img src="IMG//knee.jpg" width="100%">
+										</div>
+									</a> <a href="IMG/knee.jpg">
+										<div class="inline-image">
+											<img src="IMG/chest.jpg" width="100%">
+										</div>
+									</a> <a href="IMG/neck.jpg">
+										<div class="inline-image">
+											<img src="IMG/neck.jpg" width="100%">
+										</div>
+									</a> <a href="IMG/knee.jpg">
+										<div class="inline-image">
+											<img src="IMG/chest.jpg" width="100%">
+										</div>
+									</a> <a href="IMG/hand.jpg">
+										<div class="inline-image">
+											<img src="IMG/hand.jpg" width="100%">
+										</div>
+									</a>
+								</div>
+
+							</div>
+							<div class="ui segment">
+								<h3 class="ui dividing header">
+									<i class="h square icon"></i>Hospital history
+								</h3>
+								<div id="visits_chart" class="chart-block">
+									<div class="flot-text">
+										<div class="flot-x-axis flot-x1-axis xAxis x1Axis">
+											<div class="flot-tick-label tickLabel">Jan</div>
+											<div class="flot-tick-label tickLabel">Mar</div>
+											<div class="flot-tick-label tickLabel">May</div>
+											<div class="flot-tick-label tickLabel">Jul</div>
+											<div class="flot-tick-label tickLabel">Sep</div>
+											<div class="flot-tick-label tickLabel">Nov</div>
+										</div>
+										<div class="flot-y-axis flot-y1-axis yAxis y1Axis">
+											<div class="flot-tick-label tickLabel">0.0</div>
+											<div class="flot-tick-label tickLabel">2.5</div>
+											<div class="flot-tick-label tickLabel">5.0</div>
+											<div class="flot-tick-label tickLabel">7.5</div>
+											<div class="flot-tick-label tickLabel">10.0</div>
+											<div class="flot-tick-label tickLabel">12.5</div>
+										</div>
+									</div>
+									<div class="legend">
+										<table>
+											<tbody>
+												<tr>
+													<td class="legendColorBox"></td>
+													<td class="legendLabel">Visits</td>
+												</tr>
+												<tr>
+													<td class="legendColorBox"><div>
+															<div></div>
+														</div></td>
+													<td class="legendLabel">Inside</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+							</div>
+							<div class="ui segment">
+								<h3 class="ui dividing header">
+									<i class="suitcase icon"></i>Medications
+								</h3>
+								<div style="padding:10px;padding-bottom: 0px;">
+					<table class="ui celled striped table">
+						<tbody>
+							<tr>
+								<td style="border-top:none;" width="50%"> Norvasc </td>
+								<td style="border-top:none;" width="50%"> 5mg daily </td>
+							</tr>
+							<tr>
+								<td width="50%"> Lisinopril </td>
+								<td width="50%"> 10mg daily </td>
+							</tr>
+							<tr>
+								<td width="50%"> Carvedolil </td>
+								<td width="50%"> 6mg PO B/D </td>
+							</tr>
+							<tr>
+								<td width="50%"> Lasix </td>
+								<td width="50%"> 40mg PO B/D </td>
+							</tr>
+							<tr>
+								<td width="50%"> Ramipril </td>
+								<td width="50%"> 5mg PO daily </td>
+							</tr>
+							<tr>
+								<td width="50%"> Norvasc </td>
+								<td width="50%"> 5mg PO daily </td>
+							</tr>
+							<tr>
+								<td width="50%"> Lisinopril </td>
+								<td width="50%"> 10mg PO B/D </td>
+							</tr>
+							<tr>
+								<td width="50%"> Carvedolil </td>
+								<td width="50%"> 6mg PO B/D </td>
+							</tr>
+							<tr>
+								<td width="50%"> Lasix </td>
+								<td width="50%"> 40mg PO B/D </td>
+							</tr>
+							<tr>
+								<td width="50%"> Norvasc </td>
+								<td width="50%"> 10mg PO B/D </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+						</div>
+						<div class="sixteen wide tablet six wide computer column">
+
+							<div class="ui segment">
+								<h3 class="ui dividing header">
+									<i class="line chart icon"></i>Measurements
+								</h3>
+								<!-- <div id="images-container" class="text-center" style="margin:5px;"> -->
+								<div id="measurement-container" class="text-center"
+									style="margin: 5px;">
+									<div class="row">
+
+										<div class="measurements">
+											<h5>
+												<b>WBC</b> 11.1
+											</h5>
+											<div class="trend-panel">
+												<div id="wbc-trend">
+													<canvas width="166" height="90"
+														style="display: inline-block; width: 166px; height: 90px; vertical-align: top;"></canvas>
+												</div>
+											</div>
+										</div>
+										<div class="measurements">
+											<p>
+												<b>Physcocis</b> 11.1
+											</p>
+											<div class="trend-panel">
+												<div id="physcocis-trend">
+													<canvas width="166" height="90"
+														style="display: inline-block; width: 166px; height: 90px; vertical-align: top;"></canvas>
+												</div>
+											</div>
+										</div>
+										<div class="measurements">
+											<p>
+												<b>Glucose</b> 13.2
+											</p>
+											<div class="trend-panel">
+												<div id="glucose-trend">
+													<canvas width="166" height="90"
+														style="display: inline-block; width: 166px; height: 90px; vertical-align: top;"></canvas>
+												</div>
+											</div>
+										</div>
+										<div class="measurements">
+											<p>
+												<b>Mood</b> 0
+											</p>
+											<div class="trend-panel">
+												<div id="mood-trend">
+													<canvas width="166" height="90"
+														style="display: inline-block; width: 166px; height: 90px; vertical-align: top;"></canvas>
+												</div>
+											</div>
+										</div>
+										<div class="measurements">
+											<p>
+												<b>Temperature</b> 37.1C
+											</p>
+											<div class="trend-panel">
+												<div id="temp-trend">
+													<canvas width="166" height="90"
+														style="display: inline-block; width: 166px; height: 90px; vertical-align: top;"></canvas>
+												</div>
+											</div>
+										</div>
+										<div class="measurements">
+											<p>
+												<b>Haloperidol</b> 6.0 mg
+											</p>
+											<div class="trend-panel">
+												<div id="haloperidol-trend">
+													<canvas width="166" height="90"
+														style="display: inline-block; width: 166px; height: 90px; vertical-align: top;"></canvas>
+												</div>
+											</div>
+										</div>
+										<div class="measurements">
+											<p>
+												<b>Regular insulin</b> 3 U
+											</p>
+											<div class="trend-panel">
+												<div id="insulin-trend">
+													<canvas width="166" height="90"
+														style="display: inline-block; width: 166px; height: 90px; vertical-align: top;"></canvas>
+												</div>
+											</div>
+										</div>
+										<div class="measurements">
+											<p>
+												<b>Lithium</b> 0.56
+											</p>
+											<div class="trend-panel">
+												<div id="lithium-trend">
+													<canvas width="166" height="90"
+														style="display: inline-block; width: 166px; height: 90px; vertical-align: top;"></canvas>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- img src="img/mocks/measurements.png" width="100%" / -->
+								</div>
+							</div>
+							<div class="ui segment">
+								<h3 class="ui dividing header">
+									<i class="doctor icon"></i>Care Team History
+								</h3>
+							</div>
+						</div>
+						<div class="sixteen wide tablet four wide computer column">
+							<div class="ui segment">
+								<h3 class="ui dividing header">
+									<i class="doctor icon"></i>Oncology
+								</h3>
+								<a href="#"><img class="ui image" src="IMG/dicom.jpeg"></a>
+							</div>
+
+							<div class="ui segment">
+								<h3 class="ui dividing header">
+									<i class="comments icon"></i>Notes
+								</h3>
+								<p class="notes-para">
+									33-year-old gravida 1, para 1 female with a history of
+									hysterectomy and bilateral salpingoopherectomy for severe
+									pelvic endometriosis who presented with abdominal pain. <br>
+									<span class="text-muted">Dr. Simon, 12/12/12</span>
+								</p>
+								<p class="notes-para">
+									A CT scan demonstrated a 6 cm pelvic mass lying between the
+									bladder and rectum. Fecal occult blood test was positive. The
+									patient underwent attempted resection of the pelvic mass, as
+									well as a sigmoid colon resection. <br> <span
+										class="text-muted">Dr. Patel, 12/12/12</span>
+								</p>
+							</div>
+							<div class="ui segment">
+								<h3 class="ui dividing header">
+									<i class="sitemap icon"></i>Genogram
+								</h3>
+							</div>
+						</div>
+							
+						</div>
+					<div class="stretched row">
+
+						<div class="stretched row">
+
+
+							<div id="flot-order" class="sri flotchart"
+								style="display: none; padding: 0px; position: relative;"></div>
+
+
+
+							<div id="flot-avarage" class="sri flotchart"
+								style="padding: 0px; position: relative; display: none;"></div>
+
+
+							<div id="flot-saves" class="sri flotchart"
+								style="padding: 0px; position: relative;"></div>
+
+
+
+							<div id="flot-view" class="sri flotchart"
+								style="padding: 0px; position: relative;"></div>
+
+
+							<div id="flot-weather" class="sri flotchart"
+								style="padding: 0px; position: relative;"></div>
+
+							<div id="flot-profile" class="sri flotchart"
+								style="padding: 0px; position: relative;"></div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<!--maincontent-->
+			</div>
+		</div>
+	</div>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/1.6.2/go.js"
+		type="text/javascript"></script>
+	<!-- <script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"
+		type="text/javascript" charset="utf-8"></script> -->
+	<script type="text/javascript">
+		// -------   VOLTAGE CHARTS ------------------
+		var visitOptions = {
+			color : "#fff",
+			series : {
+				lines : {
+					fill : true,
+					fillColor : 'rgba(0,100,200,0.1)',
+					lineWidth : 1
+				},
+				legend : {
+					labelColor : "silver",
+				}
+			},
+			grid : {
+				backgroundColorx : {
+					colors : [ "rgba(0,0,100,0.2)", "rgba(0,0,0,0.1)" ]
+				},
+				borderColor : "silver",
+				borderWidth : {
+					top : 1,
+					right : 1,
+					bottom : 1,
+					left : 1
+				}
+			},
+			yaxis : {
+				tickColor : "rgba(0,0,0,0.2)"
+			},
+			xaxis : {
+				tickColor : "rgba(0,0,0,0.2)",
+				mode : "time",
+				minTickSize : [ 1, "hour" ],
+				min : (new Date(2016, 1, 1)).getTime(),
+				max : (new Date(2016, 12, 31)).getTime(),
+			//twelveHourClock : true
+			}
+		};
+
+		var trendData = [];
+		var voltageChart = undefined;
+		var visitsDataSet = [], insideDataSet = [];
+
+		function drawMeasurementTrendLines() {
+			$("#wbc-trend").sparkline([ 90, 91, 90, 92 ], {
+				type : 'line',
+				width : '100%',
+				height : '90',
+				spotRadius : 4,
+				fillColor : 'transparent',
+				lineColor : '#7f7f00',
+			});
+
+			$("#physcocis-trend").sparkline([ 21, 89, 84, 25 ], {
+				type : 'line',
+				width : '100%',
+				height : '90',
+				spotRadius : 4,
+				fillColor : 'transparent',
+				lineColor : '#7f7f00',
+			});
+			$("#glucose-trend").sparkline([ 37, 64, 62, 96 ], {
+				type : 'line',
+				width : '100%',
+				height : '90',
+				spotRadius : 4,
+				fillColor : 'transparent',
+				lineColor : '#7f7f00',
+			});
+			$("#mood-trend").sparkline([ 21, 58, 96, 82 ], {
+				type : 'line',
+				width : '100%',
+				height : '90',
+				spotRadius : 4,
+				fillColor : 'transparent',
+				lineColor : '#7f7f00',
+			});
+			$("#temp-trend").sparkline([ 33, 88, 29, 73 ], {
+				type : 'line',
+				width : '100%',
+				height : '90',
+				spotRadius : 4,
+				fillColor : 'transparent',
+				lineColor : '#7f7f00',
+			});
+			$("#insulin-trend").sparkline([ 31, 22, 67, 89 ], {
+				type : 'line',
+				width : '100%',
+				height : '90',
+				spotRadius : 4,
+				fillColor : 'transparent',
+				lineColor : '#7f7f00',
+			});
+			$("#haloperidol-trend").sparkline([ 90, 91, 90, 92 ], {
+				type : 'line',
+				width : '100%',
+				height : '90',
+				spotRadius : 4,
+				fillColor : 'transparent',
+				lineColor : '#7f7f00',
+			});
+			$("#lithium-trend").sparkline([ 50, 51, 50, 52 ], {
+				type : 'line',
+				width : '100%',
+				height : '90',
+				spotRadius : 4,
+				fillColor : 'transparent',
+				lineColor : '#7f7f00',
+			});
+		}
+
+		$(document).ready(function() {
+
+			//Measurements relevant graphs
+			drawMeasurementTrendLines();
+
+			//visitsDataSet.push([(new Date(2016, 3, 3)).getTime(), 2]);
+
+			insideDataSet.push([ (new Date(2016, 5, 5)).getTime(), 4 ]);
+			insideDataSet.push([ (new Date(2016, 5, 7)).getTime(), 3 ]);
+			insideDataSet.push([ (new Date(2016, 5, 9)).getTime(), 10 ]);
+
+			trendData = [ {
+				label : "Visits",
+				data : visitsDataSet,
+				color : '#058DC7'
+			}, {
+				label : "Inside",
+				data : insideDataSet,
+				color : 'green',
+				bars : {
+					show : true
+				}
+			} ];
+
+			voltageChart = $.plot($("#visits_chart"), trendData, visitOptions);
+			$('.flot-tick-label').css('color', 'black');
+
+		});
+
+		$('.sri').hide();
+	</script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/path.js/0.8.4/path.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"
+		type="text/javascript"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js"
+		type="text/javascript" charset="utf-8"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.time.min.js"
+		type="text/javascript" charset="utf-8"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"
+		type="text/javascript" charset="utf-8"></script>
+	<!--semantic-->
+	<script src="dist/semantic.min.js"></script>
+	<!--semantic-->
+	<!--counter number-->
+	<script src="plugins/counterup/jquery.counterup.min.js"></script>
+	<script src="plugins/counterup/waypoints.min.js"></script>
+	<!--counter number-->
+	<!--flot chart-->
+	<!-- <script src="plugins/flot/jquery.flot.js"></script> -->
+	<script src="plugins/flot/jquery.flot.resize.min.js"></script>
+	<script src="plugins/flot/jquery.flot.tooltip.min.js"></script>
+	<script src="plugins/flot/curvedLines.js"></script>
+	<script src="plugins/cookie/js.cookie.js"></script>
+	<!--flot chart-->
+	<!--chartjs chart-->
+	<!-- <script src="plugins/chartjs/chart.min.js"></script> -->
+	<!--chartjs chart-->
+
+	<script src="plugins/nicescrool/jquery.nicescroll.min.js"></script>
+
+	<script data-pace-options='{ "ajax": false }'
+		src="plugins/pacejs/pace.js"></script>
+
+	<script src="plugins/chartist/chartist.min.js"></script>
+
+	<script src="js/dashboard2.js"></script>
+	<script src="js/main.js"></script>
+</body>
